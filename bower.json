@@ -1,0 +1,29 @@
+{
+  "name": "skelenode-api",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tgolen/skelenode-api",
+  "authors": [
+    "Tim Golen <tim@golen.net>"
+  ],
+  "description": "A client side library for making XHR or Socket.IO requests to a skelenode server",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "xhr",
+    "socket",
+    "skelenode",
+    "api"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "backbone": "~1.1.2",
+    "underscore": "~1.7.0"
+  }
+}
