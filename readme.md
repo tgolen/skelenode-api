@@ -37,7 +37,7 @@ API.get('/api/v1/hello/world', function(data) {
 Connects to the web socket. The callback is called after the connection is successful. If the socket drops, it will automatically restore any event subscriptions.
 
 ### get(url, [data, options,] callback)
-Makes an HTTP `GET` request with the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument which an object of the data returned from the API. See [options](#options).
+Makes an HTTP `GET` request with the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument of the data returned from the API. See [options](#options).
 
 The `data` argument is not used for this method, so if you want to pass options, you will need to set the data argument to null.
 ```javascript
@@ -47,7 +47,7 @@ API.get('/api/v1/hello/world2', null, {}, function(data) {
 ```
 
 ### remove(url, [data, options,] callback)
-Makes an HTTP `DELETE` request with the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument which an object of the data returned from the API. See [options](#options).
+Makes an HTTP `DELETE` request with the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument of the data returned from the API. See [options](#options).
 ```javascript
 API.remove('/api/v1/hello/world2', null, {}, function(data) {
 	console.log(data);
@@ -55,7 +55,7 @@ API.remove('/api/v1/hello/world2', null, {}, function(data) {
 ```
 
 ### post(url, [data, options,] callback)
-Makes an HTTP `POST` request passing the optional `data` object and the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument which an object of the data returned from the API. See [options](#options).
+Makes an HTTP `POST` request passing the optional `data` object and the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument of the data returned from the API. See [options](#options).
 ```javascript
 API.post('/api/v1/hello/world2', { name: 'test' }, {}, function(data) {
 	console.log(data);
@@ -63,7 +63,7 @@ API.post('/api/v1/hello/world2', { name: 'test' }, {}, function(data) {
 ```
 
 ### put(url, [data, options,] callback)
-Makes an HTTP `PUT` request passing the optional `data` object and the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument which an object of the data returned from the API. See [options](#options).
+Makes an HTTP `PUT` request passing the optional `data` object and the optional `options` object which will be passed through to the jQuery `ajax()` method. The callback is called with a single argument of the data returned from the API. See [options](#options).
 ```javascript
 API.put('/api/v1/hello/world2', { name: 'test' }, {}, function(data) {
 	console.log(data);
