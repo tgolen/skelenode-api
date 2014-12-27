@@ -15,6 +15,11 @@ In addition to making standard HTTP requests to the server, you can also use thi
 }
 ```
 
+# Installation
+```
+bower install skelenode-api
+```
+
 # Usage
 Include the library and create a connection:
 ```javascript
