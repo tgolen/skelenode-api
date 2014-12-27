@@ -12,7 +12,7 @@ var $ = require('jquery'),
 
 exports.subscribe = subscribe;
 exports.unsubscribe = unsubscribe;
-exports.connectSocket = connectSocket;
+exports.connect = connect;
 exports.get = curryMethod('get');
 exports.post = curryMethod('post');
 exports.put = curryMethod('put');
@@ -32,7 +32,7 @@ window.onbeforeunload = function(e) {
  *
  * @return {void}
  */
-function connectSocket(cb) {
+function connect(cb) {
 	window.socketStatus = socketConnecting;
 
 	var socket = window.socket = io.connect(window.location.origin, { secure: !!~window.location.protocol.indexOf('https') });
