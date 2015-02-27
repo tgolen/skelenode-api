@@ -31,7 +31,7 @@ bower install skelenode-api
 # Usage
 Include the library and create a connection:
 ```javascript
-API = require('skelenode-xhr-socket');
+API = require('skelenode-api');
 
 // connect
 API.connect(function() {
